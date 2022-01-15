@@ -1,1 +1,1 @@
-"# qexo-static" 
+Qexo 静态文件
