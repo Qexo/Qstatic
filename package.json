@@ -1,6 +1,6 @@
 {
   "name": "qexo-static",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Qexo's static files",
   "main": "index.js",
   "scripts": {

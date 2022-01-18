@@ -15,7 +15,7 @@ function loadQexoFriends(id, url) {
             try {
                 ajax = new ActiveXObject("Microsoft.XMLHTTP");
             } catch (e) {
-                alert("糟糕", "你的浏览器不能上传文件", "error");
+                alert("糟糕,你的浏览器不能上传文件!");
                 return false;
             }
         }
