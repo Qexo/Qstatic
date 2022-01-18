@@ -118,7 +118,7 @@
   display: inline-block !important;
 }
 
-@media screen and (min-device-width: 400px) {
+@media screen and (min-device-width: 600px) {
   .qexo-frienddiv {
     width: calc(49% - 5px);
     margin-right: 10px;
