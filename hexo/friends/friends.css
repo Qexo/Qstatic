@@ -112,7 +112,8 @@
 .qexo-frienddiv {
   height: 92px;
   margin-top: 10px;
-  width: 100%;
+  width: calc(100% - 10px);
+  margin-right: 10px;
   box-shadow: -1px 5px 10px 0px rgb(50 50 93 / 10%),
     0px 0px 10px rgb(0 0 0 / 7%) !important;
   display: inline-block !important;
@@ -121,7 +122,6 @@
 @media screen and (min-device-width: 600px) {
   .qexo-frienddiv {
     width: calc(49% - 5px);
-    margin-right: 10px;
   }
 }
 
