@@ -74,10 +74,11 @@ function loadSideBarFriends(id, url) {
                 var res = JSON.parse(ajax.response);
                 if (res["status"]) {
                     var friends = res["data"];
-                    document.getElementById(id).innerHTML = "";
+                    document.getElementById(id).innerHTML = '<ul class="menu-list">';
                     for (let i = 0; i < friends.length; i++) {
                         document.getElementById(id).innerHTML += '<li><a class="level is-mobile is-mobile" href="'+friends[i]["url"]+'" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">'+friends[i]["name"]+'</span></span><span class="level-right"><span class="level-item tag">'+friends[i]["url"].split('/')[2]+'</span></span></a></li>';
                     }
+                    document.getElementById(id).innerHTML += '</ul>';
                 } else {
                     console.log(res["data"]["msg"]);
                 }
