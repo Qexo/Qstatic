@@ -48,7 +48,10 @@ function loadQexoFriends(id, url) {
 function loadSideBarFriends(id, url) {
     var uri = url + "/pub/friends/";
     var loadStyle = '<div class="qexo_loading"><div class="qexo_part"><div style="display: flex; justify-content: center"><div class="qexo_loader"><div class="qexo_inner one"></div><div class="qexo_inner two"></div><div class="qexo_inner three"></div></div></div></div><p style="text-align: center; display: block">友链加载中...</p></div>';
-    document.getElementById(id).innerHTML = loadStyle;
+    for(let i=0;i<document.getElementsByClassName(id).length;i++){
+        document.getElementsByClassName(id)[i].innerHTML = loadStyle;
+    }
+    document.getElementsByClassName(id)[1]
     var ajax;
     try {
         // Firefox, Opera 8.0+, Safari
@@ -74,11 +77,14 @@ function loadSideBarFriends(id, url) {
                 var res = JSON.parse(ajax.response);
                 if (res["status"]) {
                     var friends = res["data"];
-                    document.getElementById(id).innerHTML = '<ul class="menu-list">';
-                    for (let i = 0; i < friends.length; i++) {
-                        document.getElementById(id).innerHTML += '<li><a class="level is-mobile is-mobile" href="'+friends[i]["url"]+'" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">'+friends[i]["name"]+'</span></span><span class="level-right"><span class="level-item tag">'+friends[i]["url"].split('/')[2]+'</span></span></a></li>';
+                    for(let i=0;i<document.getElementsByClassName(id).length;i++){
+                        document.getElementsByClassName(id)[i].innerHTML = '<ul class="menu-list">';
                     }
-                    document.getElementById(id).innerHTML += '</ul>';
+                    for (let i = 0; i < friends.length; i++) {
+                        for(let j=0;j<document.getElementsByClassName(id).length;j++){
+                            document.getElementsByClassName(id)[j].innerHTML += '<li><a class="level is-mobile is-mobile" href="'+friends[i]["url"]+'" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">'+friends[i]["name"]+'</span></span><span class="level-right"><span class="level-item tag">'+friends[i]["url"].split('/')[2]+'</span></span></a></li>';
+                        }
+                    }
                 } else {
                     console.log(res["data"]["msg"]);
                 }
