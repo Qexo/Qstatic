@@ -78,7 +78,7 @@ function loadSideBarFriends(id, url) {
                 if (res["status"]) {
                     var friends = res["data"];
                     for(let i=0;i<document.getElementsByClassName(id).length;i++){
-                        document.getElementsByClassName(id)[i].innerHTML = '<ul class="menu-list">';
+                        document.getElementsByClassName(id)[i].innerHTML = '';
                     }
                     for (let i = 0; i < friends.length; i++) {
                         for(let j=0;j<document.getElementsByClassName(id).length;j++){
