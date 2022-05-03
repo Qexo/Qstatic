@@ -348,7 +348,7 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .display-1 {
   font-size: 3.3rem;
@@ -10391,7 +10391,7 @@ button.bg-darker:focus {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 300 !important; }
+  font-weight: 400 !important; }
 
 .font-weight-lighter {
   font-weight: lighter !important; }
@@ -13925,12 +13925,12 @@ textarea[resize="horizontal"] {
 
 p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7; }
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   margin-top: 1.5rem; }
   .lead + .btn-wrapper {
@@ -13957,7 +13957,7 @@ article h5 + figure {
 .display-3 span,
 .display-4 span {
   display: block;
-  font-weight: 300; }
+  font-weight: 400; }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   color: inherit; }
@@ -14868,7 +14868,7 @@ button.section-darker:focus {
     padding-bottom: 300px !important; } }
 
 .font-weight-300 {
-  font-weight: 300 !important; }
+  font-weight: 400 !important; }
 
 .font-weight-400 {
   font-weight: 400 !important; }
@@ -17287,7 +17287,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5em;
   margin: 3px;
   border-radius: 50%;
@@ -17363,7 +17363,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 20px;
   line-height: 20px;
   width: 20px;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .bootstrap-datetimepicker-widget table th.picker-switch {
   width: 145px; }
@@ -17420,7 +17420,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   z-index: -1;
   color: #9A9A9A;
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   border: none;
   cursor: pointer;
