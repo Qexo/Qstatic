@@ -1,54 +1,32 @@
 function loadStatistic(e) {
     var t = e + "/pub/statistic/";
+    
+    function qexoInner(a,b) {if (document.getElementById(a)) document.getElementById(a).innerHTML = b;}
+    
+    function qexoFailed() {
+    var j = ["qexo-site-uv","qexo-site-pv","qexo-page-pv"]
+    for (var i = 0; i < j.length; i++) qexoInner(j[i],"请求失败");
+    }
+    
     fetch(t, {
         referrerPolicy: "no-referrer-when-downgrade"
     }).then(function (res) {
         if (res.ok) {
             res.json().then(function (e) {
                 if (e.status) {
-                    if (document.getElementById("qexo-page-pv")) {
-                        document.getElementById("qexo-page-pv").innerHTML = e.page_pv;
-                    }
-                    if (document.getElementById("qexo-site-pv")) {
-                        document.getElementById("qexo-site-pv").innerHTML = e.site_pv;
-                    }
-                    if (document.getElementById("qexo-site-uv")) {
-                        document.getElementById("qexo-site-uv").innerHTML = e.site_uv;
-                    }
+                    qexoInner("qexo-site-uv", e.site_uv);
+                    qexoInner("qexo-site-pv", e.site_pv);
+                    qexoInner("qexo-page-pv", e.page_pv);
                 } else {
                     console.log(e.error);
-                    if (document.getElementById("qexo-page-pv")) {
-                        document.getElementById("qexo-page-pv").innerHTML = "请求失败";
-                    }
-                    if (document.getElementById("qexo-site-pv")) {
-                        document.getElementById("qexo-site-pv").innerHTML = "请求失败";
-                    }
-                    if (document.getElementById("qexo-site-uv")) {
-                        document.getElementById("qexo-site-uv").innerHTML = "请求失败";
-                    }
+                    qexoFailed()
                 }
             })
         } else {
-            if (document.getElementById("qexo-page-pv")) {
-                document.getElementById("qexo-page-pv").innerHTML = "请求失败";
-            }
-            if (document.getElementById("qexo-site-pv")) {
-                document.getElementById("qexo-site-pv").innerHTML = "请求失败";
-            }
-            if (document.getElementById("qexo-site-uv")) {
-                document.getElementById("qexo-site-uv").innerHTML = "请求失败";
-            }
+            qexoFailed()
         }
     }, function (ex) {
         console.log('站点统计失败! 网络错误')
-        if (document.getElementById("qexo-page-pv")) {
-            document.getElementById("qexo-page-pv").innerHTML = "请求失败";
-        }
-        if (document.getElementById("qexo-site-pv")) {
-            document.getElementById("qexo-site-pv").innerHTML = "请求失败";
-        }
-        if (document.getElementById("qexo-site-uv")) {
-            document.getElementById("qexo-site-uv").innerHTML = "请求失败";
-        }
+        qexoFailed()
     });
 }
