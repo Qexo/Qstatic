@@ -26999,7 +26999,7 @@ pre[class*="language-"] {
   }
 }
 
-code[class*="language-"], pre[class*="language-"] {
+.dark-version code[class*="language-"], pre[class*="language-"] {
   background-color: #162147;
 }
 
