@@ -590,8 +590,8 @@ function darkMode(el) {
   const cardNavSpan = document.querySelectorAll('.card .nav .nav-link span');
   const logo = document.querySelector('#logo');
   const logo_dark = document.querySelector('#logo-dark');
-  const vditor = document.querySelector('.vditor-content');
-  const ace = document.querySelector('.ace_editor');
+  const vditor = window.vditor;
+  const ace = window.editor;
 
 
   if (!el.getAttribute("checked")) {
