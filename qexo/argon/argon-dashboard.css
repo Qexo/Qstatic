@@ -27043,4 +27043,47 @@ pre[class*="language-"] {
   background-color: #111C44 !important;
 }
 
+.grecaptcha-badge {
+    display: none
+}
+
+.separator {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    transform: translateZ(0);
+    overflow: hidden;
+    pointer-events: none
+}
+
+.separator svg {
+    position: absolute;
+    pointer-events: none
+}
+
+.separator-top {
+    top: 0;
+    bottom: auto
+}
+
+.separator-top svg {
+    top: 0
+}
+
+.separator-bottom {
+    top: auto;
+    bottom: 0;
+}
+
+.separator-bottom svg {
+    bottom: 0
+}
+
+.separator-inverse {
+    transform: rotate(180deg)
+}
+
 /*# sourceMappingURL=dashboard-free.css.map */
