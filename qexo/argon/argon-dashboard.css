@@ -27008,4 +27008,11 @@ pre[class*="language-"] {
   background-color: #162147;
 }
 
+@media (min-width: 768px) {
+    #bottom-bar {
+        flex: 0 0 93.666667%;
+        max-width: 93.666667%;
+    }
+}
+
 /*# sourceMappingURL=dashboard-free.css.map */
