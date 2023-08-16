@@ -286,7 +286,7 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
+/* pre,
 code,
 kbd,
 samp {
@@ -316,7 +316,7 @@ code {
 
 a>code {
   color: inherit;
-}
+} */
 
 kbd {
   padding: 0.2rem 0.4rem;
@@ -26677,7 +26677,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
-/* code[class*="language-"],
+/* /* code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   background: none;
@@ -26721,7 +26721,7 @@ code[class*="language-"] ::selection {
   pre[class*="language-"] {
     text-shadow: none;
   }
-}
+} */
 
 /* Code blocks */
 pre[class*="language-"] {
@@ -27013,6 +27013,26 @@ pre[class*="language-"] {
         flex: 0 0 93.666667%;
         max-width: 93.666667%;
     }
+}
+
+/* qexo dark for wangeditor */
+.dark-version {
+  --w-e-textarea-bg-color: #111C44;
+  --w-e-textarea-color: #fff;
+  --w-e-textarea-border-color: #111C44;
+  --w-e-textarea-slight-border-color: #e8e8e8;
+  --w-e-textarea-slight-color: #d4d4d4;
+  --w-e-textarea-slight-bg-color: #ffffffbf;
+  --w-e-textarea-selected-border-color: #B4D5FF;
+  --w-e-textarea-handler-bg-color: #4290f7;
+  --w-e-toolbar-color: #fff;
+  --w-e-toolbar-bg-color: #111c44;
+  --w-e-toolbar-active-color: #ffffffb8;
+  --w-e-toolbar-active-bg-color: #f1f1f12e;
+  --w-e-toolbar-disabled-color: #999;
+  --w-e-toolbar-border-color: #8392ab59;
+  --w-e-modal-button-bg-color: #5e72e45e;
+  --w-e-modal-button-border-color: #d9d9d98c;
 }
 
 /*# sourceMappingURL=dashboard-free.css.map */
