@@ -27035,7 +27035,11 @@ pre[class*="language-"] {
   --w-e-modal-button-border-color: #d9d9d98c;
 }
 
-.dark-version .ace_gutter-cell, .ace_editor {
+.dark-version .ace_gutter-cell {
+  background-color: #111C44 !important;
+}
+
+.dark-version .ace_editor {
   background-color: #111C44 !important;
 }
 

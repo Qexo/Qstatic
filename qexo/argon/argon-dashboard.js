@@ -591,6 +591,7 @@ function darkMode(el) {
   const logo = document.querySelector('#logo');
   const logo_dark = document.querySelector('#logo-dark');
   const vditor = document.querySelector('.vditor-content');
+  const ace = document.querySelector('.ace_editor');
 
 
   if (!el.getAttribute("checked")) {
@@ -706,6 +707,10 @@ function darkMode(el) {
     // Vditor DarkMode
     if (vditor){
       window.vditor.setTheme('dark', 'dark', 'native');
+    }
+    // Ace DarkMode
+    if (ace){
+      window.editor.setTheme("ace/theme/one_dark");
     }
 
     logo.style.display = 'none';
@@ -828,6 +833,10 @@ function darkMode(el) {
     // Vditor DarkMode
     if (vditor){
       window.vditor.setTheme('light', 'light', 'github');
+    }
+    // Ace DarkMode
+    if (ace){
+      window.editor.setTheme("ace/theme/tomorrow");
     }
     logo.style.display = 'initial';
     logo_dark.style.display = 'none';
