@@ -27018,7 +27018,7 @@ pre[class*="language-"] {
 /* qexo dark for wangeditor */
 .dark-version {
   --w-e-textarea-bg-color: #111C44;
-  --w-e-textarea-color: #fff;
+  /*--w-e-textarea-color: #fff;*/
   --w-e-textarea-border-color: #111C44;
   --w-e-textarea-slight-border-color: #e8e8e8;
   --w-e-textarea-slight-color: #d4d4d4;
