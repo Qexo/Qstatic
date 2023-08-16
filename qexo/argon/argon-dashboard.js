@@ -710,7 +710,10 @@ function darkMode(el) {
     }
     // Ace DarkMode
     if (ace){
-      window.editor.setTheme("ace/theme/one_dark");
+      try{
+        window.editor.setTheme("ace/theme/one_dark");
+      }
+      catch(err){}
     }
 
     logo.style.display = 'none';
@@ -836,7 +839,10 @@ function darkMode(el) {
     }
     // Ace DarkMode
     if (ace){
-      window.editor.setTheme("ace/theme/tomorrow");
+      try{
+        window.editor.setTheme("ace/theme/tomorrow");
+      }
+      catch(err){}
     }
     logo.style.display = 'initial';
     logo_dark.style.display = 'none';
