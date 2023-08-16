@@ -590,7 +590,7 @@ function darkMode(el) {
   const cardNavSpan = document.querySelectorAll('.card .nav .nav-link span');
   const logo = document.querySelector('#logo');
   const logo_dark = document.querySelector('#logo-dark');
-  const vditor = window.vditor;
+  const vditor = document.querySelector(".vditor-content");
   const ace = window.editor;
 
 
@@ -706,7 +706,10 @@ function darkMode(el) {
     }
     // Vditor DarkMode
     if (vditor){
-      window.vditor.setTheme('dark', 'dark', 'native');
+      try{
+        window.vditor.setTheme('dark', 'dark', 'native');
+      }
+      catch(err){}
     }
     // Ace DarkMode
     if (ace){
@@ -835,7 +838,10 @@ function darkMode(el) {
     }
     // Vditor DarkMode
     if (vditor){
-      window.vditor.setTheme('light', 'light', 'github');
+      try{
+        window.vditor.setTheme('light', 'light', 'github');
+      }
+      catch(err){}
     }
     // Ace DarkMode
     if (ace){

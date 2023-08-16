@@ -25136,17 +25136,17 @@ p {
   color: #fff !important;
 }
 
-.dark-version .sidenav.bg-white {
+/* .dark-version .sidenav.bg-white {
   background: #fff !important;
-}
+} */
 
 .dark-version .sidenav.bg-white .navbar-nav .nav-link.active:after {
   color: rgba(206, 212, 218, 0.7);
 }
 
-.dark-version .sidenav.bg-white .collapse .nav-item .nav-link:not(.active) i {
+/* .dark-version .sidenav.bg-white .collapse .nav-item .nav-link:not(.active) i {
   color: #344767 !important;
-}
+} */
 
 .dark-version .sidenav.bg-white .collapse .nav-item h6,
 .dark-version .sidenav.bg-white .collapse .nav-item .h6 {
