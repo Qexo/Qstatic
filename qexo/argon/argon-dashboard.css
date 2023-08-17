@@ -25341,6 +25341,7 @@ p {
 
 .dark-version .navbar-vertical .navbar-nav .nav-item .nav-link.active {
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.15);
+  background-color: #344767;
 }
 
 .dark-version .navbar-vertical .navbar-nav .nav-item .collapse .nav .nav-item .nav-link,
