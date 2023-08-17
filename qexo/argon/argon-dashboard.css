@@ -21475,7 +21475,7 @@ fieldset:disabled .btn {
   margin-left: 0;
 }
 
-.input-group .form-control:focus {
+.input-group .form-control:first-child:focus {
   border-left: 1px solid #5e72e4 !important;
   border-right: 1px solid #5e72e4 !important;
 }
