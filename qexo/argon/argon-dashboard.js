@@ -152,6 +152,9 @@ function sidebarType(a) {
   var bodyWhite = document.querySelector("body:not(.dark-version)");
   var bodyDark = body.classList.contains('dark-version');
 
+  const logo = document.querySelector('#logo');
+  const logo_dark = document.querySelector('#logo-dark');
+
   var colors = [];
 
   for (var i = 0; i < parent.length; i++) {
@@ -200,11 +203,11 @@ function sidebarType(a) {
   // // Remove logo-white/logo-dark
 
   if ((color == 'bg-white') && bodyWhite) {
-    logo.style.display = 'none';
-    logo_dark.style.display = 'initial';
-  } else {
-    logo.style.display = 'initial';
     logo_dark.style.display = 'none';
+    logo.style.display = 'initial';
+  } else {
+    logo_dark.style.display = 'initial';
+    logo.style.display = 'none';
   }
 
   // if (color == 'bg-white' && bodyDark) {
