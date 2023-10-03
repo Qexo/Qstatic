@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif!important;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,sans-serif!important;
 }
 
 .qexo_inner,
@@ -33,7 +33,7 @@ body {
   left: 0;
   top: 0;
   animation: rotate-one 1s linear infinite;
-  border-bottom: 3px solid #888;
+  border-bottom: 3px solid #111;
   position: absolute;
 }
 
@@ -41,7 +41,7 @@ body {
   right: 0;
   top: 0;
   animation: rotate-two 1s linear infinite;
-  border-right: 3px solid #888;
+  border-right: 3px solid #111;
   position: absolute;
 }
 
@@ -49,7 +49,7 @@ body {
   right: 0;
   bottom: 0;
   animation: rotate-three 1s linear infinite;
-  border-top: 3px solid #888;
+  border-top: 3px solid #111;
   position: absolute;
 }
 
@@ -84,18 +84,18 @@ body {
 }
 
 .qexo-friends {
-  opacity: 0.9;
+  opacity: 0.94;
   margin-left: 10px;
   padding-bottom: 15px;
 }
 
 .qexo-friendtitle {
   color: black;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .qexo-friendtrans {
-  color: #556;
+  color: #778;
   font-size: 14px;
 }
 
@@ -112,7 +112,7 @@ body {
   width: 56px !important;
   height: 56px !important;
   border-radius: 50%;
-  box-shadow: 0px 0px 20px 0px rgb(50 50 50 / 5%),
+  box-shadow: 0px 0px 20px 0px rgb(50 50 60 / 7%),
     0px 0px 10px rgb(0 0 0 / 6%) !important;
   margin-top: 15px !important;
   margin-left: 15px !important;
@@ -129,51 +129,84 @@ body {
   border: 1px solid #eaeafe;
   margin-right: 10px;
   display: inline-block !important;
-  background-color: rgba(255, 255, 255, 3);
+  background-color: #ffffff;
 }
 
 @media screen and (min-device-width: 600px) {
   .qexo-frienddiv {
-    width: calc(24% - 5px); /*原：width: calc(19% - 5px);*/
-    transition: background 0.4s ease, color 0.4s ease;
+    width: calc(24% - 5px);
+    transition: background 0.4s ease, color 0.4s ease !important;
+    -webkit-transition: background 0.4s ease !important, color 0.4s ease !important;
+    -moz-transition: background 0.4s ease !important, color 0.4s ease !important;
+    -o-transition: background 0.4s ease !important, color 0.4s ease !important;
+    -ms-transition: background 0.4s ease !important, color 0.4s ease !important;
   }
 }
 
 .qexo-frienddiv:hover {
   background: #423efe;
-  .qexo-friendtitle {
-    color: white;
-  }
-  .qexo-friendtrans {
-    color: #dde;
-  }
+}
+.qexo-frienddiv:not(:hover) {
+  background: #ffffff;
+}
+
+.qexo-frienddiv:hover .qexo-friendtitle {
+  color: white;
+}
+.qexo-frienddiv:not(:hover) .qexo-friendtitle {
+  color: black;
+}
+
+.qexo-frienddiv:hover .qexo-friendtrans {
+  color: #ccd;
+}
+.qexo-frienddiv:not(:hover) .qexo-friendtrans {
+  color: #778;
 }
 
 .qexo-frienddiv:hover .qexo-frienddivleft img {
-  transition: 0.9s !important;
-  -webkit-transition: 0.9s !important;
-  -moz-transition: 0.9s !important;
-  -o-transition: 0.9s !important;
-  -ms-transition: 0.9s !important;
-  /*transform: rotate(360deg) !important;
-  -webkit-transform: rotate(360deg) !important;
-  -moz-transform: rotate(360deg) !important;
-  -o-transform: rotate(360deg) !important;
-  -ms-transform: rotate(360deg) !important;*/
+  opacity: 0;
+  transition: opacity 0.2s ease !important;
+  -webkit-transition: opacity 0.2s ease !important;
+  -moz-transition: opacity 0.2s ease !important;
+  -o-transition: opacity 0.2s ease !important;
+  -ms-transition: opacity 0.2s ease !important;
+}
+
+.qexo-frienddiv:not(:hover) .qexo-frienddivleft img {
+  opacity: 1;
+  transition: opacity 0.2s ease !important;
+  -webkit-transition: opacity 0.2s ease !important;
+  -moz-transition: opacity 0.2s ease !important;
+  -o-transition: opacity 0.2s ease !important;
+  -ms-transition: opacity 0.2s ease !important;
+}
+
+.qexo-frienddiv:hover .qexo-frienddivleft {
+  transform: scale(0);
+  width: 0;
+}
+
+.qexo-frienddiv:not(:hover) .qexo-frienddivleft {
+  transform: scale(1);
+  width: 80;
 }
 
 .qexo-frienddivleft {
   width: 80px;
   float: left;
-}
-
-.qexo-frienddivleft {
+  transition: width 0.4s ease, transform 0.5s ease !important;
+  -webkit-transition: width 0.4s ease, transform 0.5s ease !important;
+  -moz-transition: width 0.4s ease, transform 0.5s ease !important;
+  -o-transition: width 0.4s ease, transform 0.5s ease !important;
+  -ms-transition: width 0.4s ease, transform 0.5s ease !important;
   margin-right: 2px;
 }
 
 .qexo-frienddivright {
   margin-top: 18px;
   margin-right: 18px;
+  margin-left: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
