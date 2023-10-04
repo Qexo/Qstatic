@@ -1,213 +1,159 @@
 body {
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,sans-serif!important;
+	font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif!important;
 }
-
-.qexo_inner,
-.qexo_loader {
-  border-radius: 50%;
-  position: absolute;
+.qexo_inner,.qexo_loader {
+	border-radius:50%;
+	position:absolute;
 }
-
 .qexo_loading {
-  min-height: 200px;
+	min-height:200px;
 }
-
 .qexo_part {
-  min-height: 100px;
+	min-height:100px;
 }
-
 .qexo_loader {
-  background-color: #fff0;
-  width: 64px;
-  height: 64px;
-  perspective: 800px;
+	background-color:#fff0;
+	width:64px;
+	height:64px;
+	perspective:800px;
 }
-
 .qexo_inner {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+	box-sizing:border-box;
+	width:100%;
+	height:100%;
 }
-
 .qexo_inner.one {
-  left: 0;
-  top: 0;
-  animation: rotate-one 1s linear infinite;
-  border-bottom: 3px solid #111;
-  position: absolute;
+	left:0;
+	top:0;
+	animation:rotate-one 1s linear infinite;
+	border-bottom:3px solid #111;
+	position:absolute;
 }
-
 .qexo_inner.two {
-  right: 0;
-  top: 0;
-  animation: rotate-two 1s linear infinite;
-  border-right: 3px solid #111;
-  position: absolute;
+	right:0;
+	top:0;
+	animation:rotate-two 1s linear infinite;
+	border-right:3px solid #111;
+	position:absolute;
 }
-
 .qexo_inner.three {
-  right: 0;
-  bottom: 0;
-  animation: rotate-three 1s linear infinite;
-  border-top: 3px solid #111;
-  position: absolute;
+	right:0;
+	bottom:0;
+	animation:rotate-three 1s linear infinite;
+	border-top:3px solid #111;
+	position:absolute;
 }
-
 @keyframes rotate-one {
-  0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
-  }
-
-  100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
+	0% {
+	transform:rotateX(35deg) rotateY(-45deg) rotateZ(0);
 }
-
-@keyframes rotate-two {
-  0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
-  }
-
-  100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
+100% {
+	transform:rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
 }
-
-@keyframes rotate-three {
-  0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
-  }
-
-  100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
+}@keyframes rotate-two {
+	0% {
+	transform:rotateX(50deg) rotateY(10deg) rotateZ(0);
 }
-
-.qexo-friends {
-  opacity: 0.94;
-  margin-left: 10px;
-  padding-bottom: 15px;
+100% {
+	transform:rotateX(50deg) rotateY(10deg) rotateZ(360deg);
 }
-
+}@keyframes rotate-three {
+	0% {
+	transform:rotateX(35deg) rotateY(55deg) rotateZ(0);
+}
+100% {
+	transform:rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+}
+}.qexo-friends {
+	opacity:0.94;
+	margin-left:10px;
+	padding-bottom:15px;
+}
 .qexo-friendtitle {
-  color: black;
-  font-size: 20px;
+	color:black;
+	font-size:20px;
 }
-
 .qexo-friendtrans {
-  color: #778;
-  font-size: 14px;
+	color:#778;
+	font-size:14px;
 }
-
 .qexo-friends p {
-  display: none;
+	display:none;
 }
-
 .qexo-friendurl {
-  text-decoration: none !important;
-  color: black;
+	text-decoration:none !important;
+	color:black;
 }
-
 .qexo-myfriend {
-  width: 56px !important;
-  height: 56px !important;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px 0px rgb(50 50 60 / 7%),
-    0px 0px 10px rgb(0 0 0 / 6%) !important;
-  margin-top: 15px !important;
-  margin-left: 15px !important;
-  background-color: #fcfcff !important;
+	width:56px !important;
+	height:56px !important;
+	border-radius:50%;
+	box-shadow:0px 0px 20px 0px rgb(50 50 60 / 7%),0px 0px 10px rgb(0 0 0 / 6%) !important;
+	margin-top:15px !important;
+	margin-left:15px !important;
+	background-color:#fcfcff !important;
 }
-
 .qexo-frienddiv {
-  height: 86px;
-  border-radius: 18px;
-  box-shadow: 0px 2px 20px 0px rgb(50 50 50 / 2%),
-    0px 6px 7px rgb(0 0 0 / 2.5%) !important;
-  margin-top: 10px;
-  width: calc(100% - 10px);
-  border: 1px solid #eaeafe;
-  margin-right: 10px;
-  display: inline-block !important;
-  background-color: #ffffff;
+	height:86px;
+	border-radius:18px;
+	box-shadow:0px 2px 20px 0px rgb(50 50 50 / 2%),0px 6px 7px rgb(0 0 0 / 2.5%) !important;
+	margin-top:10px;
+	width:calc(100% - 10px);
+	border:1px solid #eaeafe;
+	margin-right:10px;
+	display:inline-block !important;
+	background-color:#ffffff;
 }
-
-@media screen and (min-device-width: 600px) {
-  .qexo-frienddiv {
-    width: calc(24% - 5px);
-    transition: background 0.4s ease, color 0.4s ease !important;
-    -webkit-transition: background 0.4s ease !important, color 0.4s ease !important;
-    -moz-transition: background 0.4s ease !important, color 0.4s ease !important;
-    -o-transition: background 0.4s ease !important, color 0.4s ease !important;
-    -ms-transition: background 0.4s ease !important, color 0.4s ease !important;
-  }
+@media screen and (min-device-width:600px) {
+	.qexo-frienddiv {
+	width:calc(32% - 5px);
+	transition:background 0.4s ease,color 0.4s ease !important;
 }
-
-.qexo-frienddiv:hover {
-  background: #423efe;
+}.qexo-frienddiv:hover {
+	background:#423efe;
 }
 .qexo-frienddiv:not(:hover) {
-  background: #ffffff;
+	background:#ffffff;
 }
-
 .qexo-frienddiv:hover .qexo-friendtitle {
-  color: white;
+	color:white;
 }
 .qexo-frienddiv:not(:hover) .qexo-friendtitle {
-  color: black;
+	color:black;
 }
-
 .qexo-frienddiv:hover .qexo-friendtrans {
-  color: #ccd;
+	color:#ccd;
 }
 .qexo-frienddiv:not(:hover) .qexo-friendtrans {
-  color: #778;
+	color:#778;
 }
-
 .qexo-frienddiv:hover .qexo-frienddivleft img {
-  opacity: 0;
-  transition: opacity 0.2s ease !important;
-  -webkit-transition: opacity 0.2s ease !important;
-  -moz-transition: opacity 0.2s ease !important;
-  -o-transition: opacity 0.2s ease !important;
-  -ms-transition: opacity 0.2s ease !important;
+	opacity:0;
+	transition:opacity 0.2s ease !important;
 }
-
 .qexo-frienddiv:not(:hover) .qexo-frienddivleft img {
-  opacity: 1;
-  transition: opacity 0.2s ease !important;
-  -webkit-transition: opacity 0.2s ease !important;
-  -moz-transition: opacity 0.2s ease !important;
-  -o-transition: opacity 0.2s ease !important;
-  -ms-transition: opacity 0.2s ease !important;
+	opacity:1;
+	transition:opacity 0.2s ease !important;
 }
-
 .qexo-frienddiv:hover .qexo-frienddivleft {
-  transform: scale(0);
-  width: 0;
+	transform:scale(0);
+	width:0;
 }
-
 .qexo-frienddiv:not(:hover) .qexo-frienddivleft {
-  transform: scale(1);
-  width: 80;
+	transform:scale(1);
+	width:80;
 }
-
 .qexo-frienddivleft {
-  width: 80px;
-  float: left;
-  transition: width 0.4s ease, transform 0.5s ease !important;
-  -webkit-transition: width 0.4s ease, transform 0.5s ease !important;
-  -moz-transition: width 0.4s ease, transform 0.5s ease !important;
-  -o-transition: width 0.4s ease, transform 0.5s ease !important;
-  -ms-transition: width 0.4s ease, transform 0.5s ease !important;
-  margin-right: 2px;
+	width:80px;
+	float:left;
+	transition:width 0.4s ease,transform 0.5s ease !important;
+	margin-right:2px;
 }
-
 .qexo-frienddivright {
-  margin-top: 18px;
-  margin-right: 18px;
-  margin-left: 18px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+	margin-top:18px;
+	margin-right:18px;
+	margin-left:18px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
 }
