@@ -1,13 +1,13 @@
 {
   "name": "qexo-static",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Qexo's static files",
   "repository": {
     "type": "git",
     "url": "git@github.com:am-abudu/qexo-static.git"
   },
   "author": "Abudu",
-  "license": "GPL-3.0",
+  "license": "LGPL-2.1-or-later",
   "bugs": {
     "url": "https://github.com/Qexo/Qexo/issues"
   },
